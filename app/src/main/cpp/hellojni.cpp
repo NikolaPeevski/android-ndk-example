@@ -9,7 +9,6 @@
 extern "C"
 JNIEXPORT jint JNICALL
 Java_com_example_potato_MainActivity_echo(JNIEnv *env, jobject thiz, jint width, jint height) {
-    // TODO: implement echo()
     return width * height;
 }
 extern "C"
