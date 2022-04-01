@@ -43,16 +43,12 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            echo(2, 2)?.let {
-                Snackbar.make(view, it.toString(), Snackbar.LENGTH_LONG)
+                Snackbar.make(view, echo(2, 2).toString(), Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-            }
         }
         binding.fab2.setOnClickListener { view ->
-            echoObj( Rectangle(4, 5))?.let {
-                Snackbar.make(view, it.toString(), Snackbar.LENGTH_LONG)
+                Snackbar.make(view, echoObj(Rectangle(4, 5)).toString(), Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
-            }
         }
     }
 
